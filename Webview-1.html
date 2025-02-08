@@ -19,16 +19,44 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* 通用樣式 */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #F9F9F9;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 100vh;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.container {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 400px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #FFFFFF;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>h1 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #1A73E8;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 24px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* 輸入框樣式 */</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.input-box {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 10px;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 1px solid #E0E0E0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 12px; /* 更圓的圓角 */</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 16px;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #000000;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #FFFFFF;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 15px; /* 增加間距 */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.input-box::placeholder {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #9E9E9E;</span></p>
@@ -37,17 +65,18 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* 按鈕樣式 */</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.rounded-button {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 12px;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 12px; /* 更圓的圓角 */</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 16px;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #FFFFFF;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #1A73E8; /* 品牌色 */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #1A73E8;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 10px; /* 增加間距 */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transition: background-color 0.3s ease;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.rounded-button:hover {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #1557B0; /* 按鈕懸停效果 */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #1557B0;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
 <p class="p2"><span class="s1"></span><br></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* 註冊按鈕樣式 */</span></p>
@@ -57,7 +86,7 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 1px solid #1A73E8;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.register-button:hover {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #F5F5F5; /* 懸停效果 */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #F5F5F5;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
 <p class="p2"><span class="s1"></span><br></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* 忘記密碼連結樣式 */</span></p>
@@ -73,36 +102,84 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-decoration: underline;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
 <p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* 整體佈局 */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.container {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 400px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0 auto;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #F9F9F9;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>h1 {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #1A73E8;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 24px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* 隱藏頁面 */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.hidden {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: none;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
 <p class="p1"><span class="s1">&lt;/head&gt;</span></p>
 <p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- 登錄頁面 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="login-page" class="container"&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1&gt;歡迎使用計乘車達人&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- 輸入框 --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;input type="text" class="input-box" placeholder="請輸入 Email"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;input type="password" class="input-box" placeholder="請輸入密碼"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- 登錄按鈕 --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button class="rounded-button"&gt;登錄&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- 註冊按鈕 --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button class="rounded-button register-button"&gt;註冊&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- 忘記密碼連結 --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="#" class="forgot-password"&gt;忘記密碼？&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;input type="text" class="input-box" id="email" placeholder="請輸入 Email"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;input type="password" class="input-box" id="password" placeholder="請輸入密碼"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button class="rounded-button" id="login-button"&gt;登錄&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button class="rounded-button register-button" id="register-button"&gt;註冊&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="#" class="forgot-password" id="forgot-password"&gt;忘記密碼？&lt;/a&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- 註冊頁面 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="register-page" class="container hidden"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1&gt;註冊新帳號&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;input type="text" class="input-box" id="register-email" placeholder="請輸入 Email"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;input type="password" class="input-box" id="register-password" placeholder="請輸入密碼"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;input type="password" class="input-box" id="confirm-password" placeholder="確認密碼"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button class="rounded-button" id="submit-register-button"&gt;提交&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button class="rounded-button register-button" id="back-to-login-button"&gt;返回登錄&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 切換頁面</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function showPage(pageId) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.container').forEach(page =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>page.classList.add('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById(pageId).classList.remove('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 登錄按鈕點擊事件</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById('login-button').addEventListener('click', function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const email = document.getElementById('email').value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const password = document.getElementById('password').value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (email &amp;&amp; password) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>AppInventor.setWebViewString(JSON.stringify({ action: 'login', email, password }));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>alert('請輸入 Email 和密碼！');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 註冊按鈕點擊事件</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById('register-button').addEventListener('click', function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>showPage('register-page');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 提交註冊按鈕點擊事件</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById('submit-register-button').addEventListener('click', function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const email = document.getElementById('register-email').value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const password = document.getElementById('register-password').value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const confirmPassword = document.getElementById('confirm-password').value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (email &amp;&amp; password &amp;&amp; confirmPassword) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (password === confirmPassword) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>AppInventor.setWebViewString(JSON.stringify({ action: 'register', email, password }));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>alert('密碼不一致！');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>alert('請填寫所有欄位！');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 返回登錄按鈕點擊事件</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById('back-to-login-button').addEventListener('click', function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>showPage('login-page');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 忘記密碼連結點擊事件</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById('forgot-password').addEventListener('click', function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>AppInventor.setWebViewString(JSON.stringify({ action: 'forgot-password' }));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
 <p class="p1"><span class="s1">&lt;/body&gt;</span></p>
 <p class="p1"><span class="s1">&lt;/html&gt;</span></p>
 </body>
